@@ -1,0 +1,89 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products_apis",
+  "info": {
+    "singularName": "products-api",
+    "pluralName": "products-apis",
+    "displayName": "ProductsApi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "local_price": {
+      "type": "integer",
+      "required": true
+    },
+    "qty": {
+      "type": "integer",
+      "required": true
+    },
+    "description": {
+      "type": "json"
+    },
+    "category": {
+      "type": "json",
+      "required": true
+    },
+    "size": {
+      "type": "json"
+    },
+    "colour": {
+      "type": "enumeration",
+      "enum": [
+        "White",
+        "Black",
+        "Pink",
+        "Violet",
+        "Indigo",
+        "Blue",
+        "Green",
+        "Yellow",
+        "Orange",
+        "Red"
+      ]
+    },
+    "required_metadata": {
+      "type": "json"
+    },
+    "metadata": {
+      "type": "json"
+    },
+    "rating": {
+      "type": "json"
+    },
+    "image": {
+      "type": "json",
+      "required": true
+    },
+    "hero_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "box_items": {
+      "type": "json"
+    },
+    "isfeatured": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
