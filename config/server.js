@@ -6,10 +6,10 @@ module.exports = ({ env }) => ({
     keys: env.array('APP_KEYS'),
   },
   // socket: '/tmp/nginx.socket', // only use if absolutely required
-  emitErrors: false,
+  // emitErrors: false,
   url: env('PUBLIC_URL'),
-  proxy: env.bool('IS_PROXIED', true),
-  cron: {
-    enabled: env.bool('CRON_ENABLED', false),
-  },
+  // proxy: env.bool('IS_PROXIED', true),
+  // cron: {
+  //   enabled: env.bool('CRON_ENABLED', false),
+  // },
 });
