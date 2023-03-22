@@ -8,5 +8,5 @@ module.exports = ({ env }) => ({
   // socket: '/tmp/nginx.socket', // only use if absolutely required
   // emitErrors: false,
 
-  // url: env('PUBLIC_URL'),
+  url: env('PUBLIC_URL'),
 });
