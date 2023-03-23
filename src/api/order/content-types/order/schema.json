@@ -16,11 +16,9 @@
       "type": "email",
       "required": true
     },
-    "name": {
-      "type": "string"
-    },
-    "order_Id": {
-      "type": "uid",
+    "user": {
+      "type": "string",
+      "maxLength": 3,
       "required": true
     },
     "products": {
@@ -39,16 +37,16 @@
       "type": "integer",
       "required": true
     },
-    "address": {
-      "type": "text",
-      "required": true,
-      "maxLength": 500,
-      "minLength": 10
-    },
     "status": {
-      "type": "string",
-      "maxLength": 15,
-      "minLength": 5
+      "type": "string"
+    },
+    "order_Id": {
+      "type": "uid",
+      "required": true
+    },
+    "address": {
+      "type": "json",
+      "required": true
     }
   }
 }
