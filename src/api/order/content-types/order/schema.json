@@ -18,8 +18,8 @@
     },
     "user": {
       "type": "string",
-      "maxLength": 3,
-      "required": true
+      "required": true,
+      "minLength": 3
     },
     "products": {
       "type": "json",

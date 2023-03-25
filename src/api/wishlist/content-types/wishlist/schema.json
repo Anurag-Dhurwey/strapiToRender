@@ -4,7 +4,8 @@
   "info": {
     "singularName": "wishlist",
     "pluralName": "wishlists",
-    "displayName": "Wishlist"
+    "displayName": "Wishlist",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,14 +15,13 @@
     "email": {
       "type": "email",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "user": {
       "type": "string",
       "required": true,
-      "unique": true,
-      "minLength": 3,
-      "maxLength": 15
+      "unique": false,
+      "minLength": 3
     },
     "wishlist": {
       "type": "json",
