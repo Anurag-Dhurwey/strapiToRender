@@ -4,7 +4,8 @@
   "info": {
     "singularName": "cart",
     "pluralName": "carts",
-    "displayName": "Cart"
+    "displayName": "Cart",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,8 +21,7 @@
       "type": "string",
       "required": true,
       "unique": true,
-      "minLength": 3,
-      "maxLength": 15
+      "minLength": 3
     },
     "cart": {
       "type": "json",
